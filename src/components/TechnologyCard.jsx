@@ -1,7 +1,18 @@
+
+const badgeColors = {
+  Frontend: "bg-blue-50 text-blue-600",
+  Backend: "bg-emerald-50 text-emerald-600",
+  Database: "bg-rose-50 text-rose-600",
+  Language: "bg-amber-50 text-amber-600",
+  Styling: "bg-sky-50 text-sky-600",
+  DevOps: "bg-violet-50 text-violet-600",
+  Tools: "bg-slate-100 text-slate-600",
+};
+
 export default function TechnologyCard({ tech, onAdd, isAdded }) {
   return (
-    <div className="flex flex-col items-center gap-4 rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:scale-105 hover:shadow-md">
-     <div className="flex items-start justify-between">
+    <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex items-start justify-between">
         <img src={tech.icon} alt={tech.name} className="h-10 w-10" />
         <span
           className={`rounded-full px-3 py-1 text-xs font-semibold ${
@@ -36,8 +47,8 @@ export default function TechnologyCard({ tech, onAdd, isAdded }) {
             : "bg-slate-900 hover:bg-slate-800"
         }`}
       >
-        {isAdded ? "Added to Stack" : "Add to Stack"}
+        {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>
-     </div>
+    </div>
   );
-}    
+}

@@ -10,7 +10,7 @@ function App() {
  const [technologies, setTechnologies] = useState([]);
 const [stack, setStack] = useState([]);
 const UserDatapromise = async () => {
-  const response = await fetch('../../public/technologies.json');
+  const response = await fetch('/tecnologies.json');
   const data =await response.json();
   return data;
  
@@ -58,7 +58,7 @@ const handleAdd = (tech) => {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-3 xl:grid-cols-3">
       {technologies.map((tech) => (
         <TechnologyCard 
-        key={tech.id} technology={tech}
+        key={tech.id} tech={tech}
         onAdd={handleAdd}
         onRemove={handleRemove}
         isAdded={stack.some((item) => item.id === tech.id)} />
@@ -74,7 +74,7 @@ const handleAdd = (tech) => {
     </Suspense>
     </main>
     <ToastContainer position="top-right" autoClose={2000} />
-    {/* //< className="mt-8 flex justify-center"> */}
+    
     </div>
   )
 }
