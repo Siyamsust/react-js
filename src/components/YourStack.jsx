@@ -1,7 +1,7 @@
 export default function  YourStack({ stack, onRemove, onRemoveAll } )   
 { 
  return (
-  <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
+  <aside className="h-fit self-start rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
       <h2 className="text-xl font-bold">Your Stack</h2>
       <p className="mt-1 text-sm text-slate-500">
         {stack.length} Technology Selected
