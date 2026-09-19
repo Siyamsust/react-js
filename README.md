@@ -2,7 +2,7 @@
 
 A React website where you can browse popular development technologies and put together your own stack. Pick a frontend framework, a backend runtime, a database and the tools around them, and see your selection build up in a side panel as you go.
 
-**Live site:** [https://react-9ytmhazlb-siyams-projects-c05f1af6.vercel.app/](https://react-9ytmhazlb-siyams-projects-c05f1af6.vercel.app/)
+**Live site:** [https://react-87owwtzil-siyams-projects-c05f1af6.vercel.app/](https://react-87owwtzil-siyams-projects-c05f1af6.vercel.app/)
 
 ## 🛠️ Technologies used
 
