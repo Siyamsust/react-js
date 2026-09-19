@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import { Suspense } from 'react'
-import './App.css'
+
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import TechnologyCard from './components/TechnologyCard'
 import YourStack from './components/YourStack'
+import Footer from './components/Footer'
 function App() {
  const [technologies, setTechnologies] = useState([]);
 const [stack, setStack] = useState([]);
@@ -73,6 +75,7 @@ const handleAdd = (tech) => {
       </div>
     </Suspense>
     </main>
+     <Footer />
     <ToastContainer position="top-right" autoClose={2000} />
     
     </div>
